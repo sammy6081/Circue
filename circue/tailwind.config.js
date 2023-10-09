@@ -19,6 +19,9 @@ export default {
       },
       width: {
         'w-100': "31rem",
+      },
+      height: {
+        'h-100': "31rem",
       }
     },
   },

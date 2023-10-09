@@ -3,7 +3,16 @@
 @tailwind utilities;
 
 @layer{
-    
+    html {
+        scroll-behavior: smooth;
+      }
+      *,
+      ::after,
+      ::before {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
     .swiper-pagination-bullet {
         background-color: #0D173B !important;
         transform: translateY(-3rem);
@@ -21,15 +30,21 @@
         object-fit: cover;
     } 
     @media (max-width: 768px) {
-        .swiper .swiper-slide{
+        .swiper{
+            height: 120% !important;
+        }
+        .swiper-slide{
             height: 100% !important;
-            object-fit: cover;
+        }
+        .swiper-slide img{
+            height: 100% !important;
+            object-fit: none;
         }
         .swiper-height{
             height: 50vh !important;
         }
         .swiper-pagination-bullet {
-            transform: translateY(10rem) !important;
+            transform: translateY(-2rem) !important;
         }
     }
 }

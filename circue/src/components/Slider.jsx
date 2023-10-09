@@ -5,7 +5,7 @@ import { Pagination, EffectCoverflow, Autoplay } from 'swiper/modules';
 import 'swiper/css/pagination';
 import 'swiper/css';
 
-// Import images as modules
+// Import images as modules 
 import slide1 from '../assets/slide 1.png';
 import slide2 from '../assets/slide 2.png';
 import slide3 from '../assets/slide 3.png';
@@ -60,6 +60,7 @@ const slides = [
             className="mySwiper"
             modules={[Pagination, EffectCoverflow, Autoplay]}
             loop={true}
+            autoHeight={true}
             autoplay={{ delay: 9000,
             disableOnInteraction: false,}}
             speed={1500}
